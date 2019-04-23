@@ -5,11 +5,30 @@
     <title>Questão 08</title>
 </head>
 <body>
+    <p>
+        O calculo é: x + y + z =
+        <span id="x">x</span>
+        +
+        <span id="y">y</span>
+        +
+        <span id="z">z</span>
+        =
+        <span id="resultado">resultado</span>
+    </p>
+    
     <script>
         var x=3;
         var y=7;
         var z=9;
         var resultado= x+y+z;
+        var eX = document.getElementById ("x");
+        eX.textContent = x;
+        var eY = document.getElementById ("y");
+        eY.textContent = y;
+        var eZ = document.getElementById ("z");
+        eZ.textContent = z;
+        var eResultado = document.getElementById ("resultado");
+        eResultado.textContent = resultado;
     </script>
 </body>
 </html>
