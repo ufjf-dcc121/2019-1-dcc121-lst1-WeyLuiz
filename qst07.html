@@ -5,10 +5,26 @@
     <title>Questão 07</title>
 </head>
 <body>
+    <p>
+        Olá 
+        <span id="nome">Fulano</span>
+         
+        <span id="sobrenome">da Silva</span>
+        ! Você tem 
+        <span id="idade">19</span>
+         anos!
+    </p>
     <script>
-        var nome = "Weyder Luiz";
-        var sobrenome = "Gomes Gante";
-        var idade = 26;
-    </script>
+            var nome = "Weyder Luiz";
+            var sobrenome = "Gomes Gante";
+            var idade = 26;
+            var eNome = document.getElementById ("nome");
+            eNome.textContent = nome;
+            var eSobrenome = document.getElementById ("sobrenome");
+            eSobrenome.textContent = sobrenome;
+            var eIdade = document.getElementById ("idade");
+            eIdade.textContent = idade;
+        </script>
 </body>
 </html>
+//Estranho que para imprimir sem as aspas tive que tirar elas.
